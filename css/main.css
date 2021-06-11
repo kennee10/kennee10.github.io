@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+:root {
+    --clr-primary-200: #f3eed9;
+    --clr-primary-400: red;
+
+    --clr-neutral-100: #fff;
+    --clr-neutral-900: #222c2a;
+
+    --ff-primary1: 'Comfortaa', cursive;
+    --ff-primary2: 'DM Mono', monospace;
+    --ff-accent: 'Lexend', sans-serif;
+
+    --fs-p: 3.5em;
+
+    --fw-p-reg: 300;
+    --fw-p-bold: 500;
+}
+
+/* Introduction Section */
+
+p {
+    font-family: var(--ff-primary2);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-p-reg);
+
+    line-height: 1.65em;
+}
+
+strong {
+    font-weight: var(--fw-p-bold);
+}
+
+.introduction {
+    margin-top: 3em;
+}
