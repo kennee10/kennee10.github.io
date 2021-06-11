@@ -23,26 +23,47 @@ p {
     --ff-primary2: 'DM Mono', monospace;
     --ff-accent: 'Lexend', sans-serif;
 
-    --fs-p: 3.5em;
-
     --fw-p-reg: 300;
     --fw-p-bold: 500;
 }
 
-/* Introduction Section */
+/* ==== Introduction Section ==== */
+/* Mobile ver */
+
+.introduction {
+    margin-top: 2em;
+    margin-left: 0.6em;
+}
 
 p {
     font-family: var(--ff-primary2);
-    font-size: var(--fs-p);
+    font-size: 1.75em;
     font-weight: var(--fw-p-reg);
 
-    line-height: 1.65em;
+    line-height:2em;
 }
 
 strong {
     font-weight: var(--fw-p-bold);
 }
 
-.introduction {
-    margin-top: 3em;
+
+/* Desktop ver */
+@media (min-width: 600px) {
+    .introduction {
+        margin-top: 6em;
+        margin-left: 2em;
+    }
+
+    p {
+    font-family: var(--ff-primary2);
+    font-size: 3.5em;
+    font-weight: var(--fw-p-reg);
+
+    line-height: 1.65em;
+    }
+
+    strong {
+        font-weight: var(--fw-p-bold);
+    }
 }
