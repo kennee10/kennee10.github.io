@@ -21,6 +21,7 @@ p {
 
     --ff-primary1: 'Comfortaa', cursive;
     --ff-primary2: 'DM Mono', monospace;
+    --ff-primary3: 'Work Sans', sans-serif;
     --ff-accent: 'Lexend', sans-serif;
 
     --fw-p-reg: 300;
@@ -39,7 +40,7 @@ p {
 }
 
 p {
-    font-family: var(--ff-primary2);
+    font-family: var(--ff-primary3);
     font-size: 1.6rem;
     font-weight: var(--fw-p-reg);
 
@@ -52,7 +53,7 @@ strong {
 
 
 /* Desktop ver */
-@media (min-width: 40em) {
+@media (min-width: 47em) {
     .introduction {
         margin-top: 6rem;
         margin-left: 2rem;
@@ -61,7 +62,7 @@ strong {
     }
 
     p {
-    font-family: var(--ff-primary2);
+    font-family: var(--ff-primary3);
     font-size: 3.5rem;
     font-weight: var(--fw-p-reg);
 
