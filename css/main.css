@@ -4,20 +4,21 @@
     box-sizing: border-box;
 }
 
-body,
+/* body,
 h1,
 h2,
 h3,
 p {
     margin: 0;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 :root {
-    /* --clr-primary-200: #f3eed9;
-    --clr-primary-400: red;
-
-    --clr-neutral-100: #fff;
-    --clr-neutral-900: #222c2a; */
+    --clr-primary: #eee;
 
     --ff-primary1: 'Comfortaa', cursive;
     --ff-primary2: 'DM Mono', monospace;
@@ -77,25 +78,22 @@ strong {
 
 /* ==== Contact & Socials ==== */
 /*** Mobile ***/
+
 html {
+    /* ! */
     height: 100%;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    background-color: #eee;
-
     display: flex;
     flex-direction: column;
+    background-color: var(--clr-primary);
 
+    /* ! */
     min-height: 100%;
 }
 
-.icon {
+.socials-menu {
     display: flex;
     justify-content: center;
 
@@ -103,13 +101,13 @@ body {
     margin-top: auto;
 }
 
-.icon ul li{
+.socials-menu li {
     display: inline-block;
 
-    /*** Box styling ***/
+    /*** Box around icons styling ***/
     width: 50px;
     height: 50px;
-    background-color: #eee;
+    background-color: var(--clr-primary);
     margin: auto 15px;
     border-radius: 10%;
     box-shadow: 3px 3px 6px #aeaeae,
@@ -122,22 +120,22 @@ body {
     color: #333;
     
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.35s;
 }
 
-.icon ul li > *{
+.socials-menu li > *{
     color: #333;
 }
 
-/* Hover effects */
+/*** Hover effects ***/
 
-.icon ul li:hover {
+.socials-menu li:hover {
     background-color: rgb(68, 68, 68);
     border-radius: 50%;
 }
 
-.icon ul li:hover > * {
-    color: #eee;
+.socials-menu li:hover > * {
+    color: var(--clr-primary);
 }
 
 
