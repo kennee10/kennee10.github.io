@@ -130,3 +130,9 @@ body {
     background-color: #00acee;
 }
 
+.icon ul li:nth-child(4):hover {
+    color: #eee;
+    border-radius: 50%;
+    background-color: #00acee;
+}
+
