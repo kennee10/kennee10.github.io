@@ -54,7 +54,7 @@ strong {
 
 
 /*** Desktop ver ***/
-@media (min-width: 47em) {
+@media (min-width: 60em) {
     .introduction {
         margin-top: 6rem;
         margin-left: 2rem;
@@ -77,8 +77,6 @@ strong {
 
 /* ==== Contact & Socials ==== */
 /*** Mobile ***/
-
-/* Tutorial */
 * {
     margin: 0;
     padding: 0;
@@ -86,13 +84,19 @@ strong {
 
 body {
     background-color: #eee;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
 }
 
 .icon {
     display: flex;
     justify-content: center;
-    /* ! */
-    margin: 25% auto;
+
+    margin-bottom: 5vh;
+    margin-top: auto;
 }
 
 .icon ul li{
