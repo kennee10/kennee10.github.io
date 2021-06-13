@@ -124,7 +124,7 @@ body {
 
 .socials-menu li:hover {
     background-color: rgb(68, 68, 68);
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .socials-menu li:hover > * {
