@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-/* body,
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +18,7 @@ p {
     --ff-accent: 'Lexend', sans-serif;
 
     --fw-p-reg: 300;
-    --fw-p-bold: 500;
+    --fw-p-bold: 400;
 }
 
 /* ==== Introduction Section ==== */
@@ -37,8 +29,6 @@ p {
     margin-bottom: 2rem;
     margin-left: 0.6rem;
     margin-right: 0.6rem;
-
-    /* text-align: justify; */
 }
 
 .intro_content {
@@ -56,19 +46,22 @@ strong {
 
 /*** Desktop ver ***/
 @media (min-width: 60em) {
-    .introduction {
-        margin-top: 6rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-
+    .intro {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
     }
 
     .intro_content {
+    line-height: 6rem;
+
+    /* ? */
+    text-align: justify;
+
     font-family: var(--ff-primary3);
     font-size: 3.5rem;
     font-weight: var(--fw-p-reg);
-
-    line-height: 6rem;
     }
 
     strong {
