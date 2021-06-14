@@ -4,22 +4,46 @@
     box-sizing: border-box;
 }
 
+:root {
+    --clr-bg: #eee;
+    --clr-text: black;
+    --clr-icon: #333;
+    --clr-icon-hover: rgb(68, 68, 68);
+
+    --ff-primary: 'Work Sans', sans-serif;
+
+    --fw-p-reg: 300;
+    --fw-p-bold: 400;
+}
+
+body.dark {
+    --clr-bg: #333;
+    --clr-text: #eee;
+    --clr-icon: #eee;
+    --clr-icon-hover: rgb(68, 68, 68);
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --clr-primary: #eee;
-
-    --ff-primary1: 'Comfortaa', cursive;
-    --ff-primary2: 'DM Mono', monospace;
-    --ff-primary3: 'Work Sans', sans-serif;
-    --ff-accent: 'Lexend', sans-serif;
-
-    --fw-p-reg: 300;
-    --fw-p-bold: 400;
+html {
+    /* ! */
+    height: 100%;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--clr-bg);
+
+    /* ! */
+    min-height: 100%;
+}
+
+
 
 /* ==== Introduction Section ==== */
 /*** Mobile ver ***/
@@ -32,11 +56,12 @@
 }
 
 .intro_content {
-    font-family: var(--ff-primary3);
+    font-family: var(--ff-primary);
     font-size: 1.6rem;
     font-weight: var(--fw-p-reg);
 
     line-height: 3rem;
+    color: var(--clr-text);
 }
 
 strong {
@@ -47,8 +72,6 @@ strong {
 /*** Desktop ver ***/
 @media (min-width: 60em) {
     .intro {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
         margin-left: 2.5rem;
         margin-right: 2.5rem;
     }
@@ -59,32 +82,25 @@ strong {
     /* ? */
     text-align: justify;
 
-    font-family: var(--ff-primary3);
     font-size: 3.5rem;
-    font-weight: var(--fw-p-reg);
+    color: var(--clr-text);
     }
+}
 
-    strong {
-        font-weight: var(--fw-p-bold);
-    }
+/* ==== Theme toggle button */
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+}
+.theme-toggle-btn {
+
+    width: 10rem;
+    height: 2.5rem;
+
 }
 
 /* ==== Contact & Socials ==== */
 /*** Mobile ***/
-
-html {
-    /* ! */
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--clr-primary);
-
-    /* ! */
-    min-height: 100%;
-}
 
 .socials-menu {
     display: flex;
@@ -110,25 +126,24 @@ body {
     text-align: center;
     line-height: 50px;
     font-size: 25px;
-    color: #333;
     
     cursor: pointer;
     transition: 0.35s;
 }
 
 .socials-menu li > *{
-    color: #333;
+    color: var(--clr-icon);
 }
 
 /*** Hover effects ***/
 
 .socials-menu li:hover {
-    background-color: rgb(68, 68, 68);
-    /* border-radius: 50%; */
+    background-color: var(--clr-icon-hover);
+    border-radius: 35%;
 }
 
 .socials-menu li:hover > * {
-    color: var(--clr-primary);
+    color: var(--clr-bg);
 }
 
 
