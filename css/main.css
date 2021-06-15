@@ -1,11 +1,18 @@
+/* ==== CSS Reset ==== */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ==== Mostly declaring variables ==== */
 :root {
-    --clr-bg: #eee;
+    --clr-primary: #eee;
     --clr-text: black;
     --clr-icon: #333;
     --clr-icon-hover: rgb(68, 68, 68);
@@ -14,36 +21,28 @@
 
     --fw-p-reg: 300;
     --fw-p-bold: 400;
+
+    /* The HTML element references the viewport which has a height value equal to the visible viewport height */
+    height: 100%;
 }
 
 body.dark {
-    --clr-bg: #333;
+    --clr-primary: #333;
     --clr-text: #eee;
     --clr-icon: #eee;
     --clr-icon-hover: rgb(68, 68, 68);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    /* ! */
-    height: 100%;
-}
-
+/* ==== General Style for body element ==== */
 body {
     display: flex;
     flex-direction: column;
     
-    background-color: var(--clr-bg);
+    background-color: var(--clr-primary);
 
     /* ! */
     min-height: 100%;
 }
-
-
 
 /* ==== Introduction Section ==== */
 /*** Mobile ver ***/
@@ -143,7 +142,7 @@ strong {
 }
 
 .socials-menu li:hover > * {
-    color: var(--clr-bg);
+    color: var(--clr-primary);
 }
 
 
