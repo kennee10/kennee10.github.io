@@ -12,7 +12,7 @@
 
 /* ==== Mostly declaring variables ==== */
 :root {
-    --clr-primary: #eee;
+    --clr-primary: rgb(240, 240, 240);
     --clr-text: black;
     --clr-icon: #333;
     --clr-icon-hover: rgb(68, 68, 68);
