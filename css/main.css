@@ -85,6 +85,35 @@ strong {
     color: var(--clr-text);
     }
 }
+/* ==== Projects Section ==== */
+/*** Mobile ver ***/
+
+.header {
+    margin: 0.5rem 0.4rem;
+
+    font-family: var(--ff-primary);
+    font-size: 1rem;
+    font-weight: var(--fw-p-bold);
+
+    color: var(--clr-text);
+}
+
+
+
+/* ==== Skills Section ==== */
+/*** Mobile ver ***/
+.skills {
+    margin-top: 1rem;
+}
+
+.skills-content {
+    margin: 0 0.2rem;
+}
+.skill {
+    font-family: var(--ff-primary);
+    font-size: 1.3rem;
+    font-weight: var(--fw-p-reg);
+}
 
 /* ==== Theme toggle button */
 .theme-toggle {
