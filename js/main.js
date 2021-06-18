@@ -4,7 +4,7 @@ $(window).on('load',function(){
 });
 
 // ==== theme toggle btn ====
-document.querySelector(".theme-toggle-btn").addEventListener
-("click", () => {
-    document.body.classList.toggle('dark');
-});
+// document.querySelector(".theme-toggle-btn").addEventListener
+// ("click", () => {
+//     document.body.classList.toggle('dark');
+// });
